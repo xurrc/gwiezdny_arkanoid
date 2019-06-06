@@ -603,7 +603,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START GAME
+  m_Text: "\u0282\u019A\u03B1\u027E\u019A \u0260\u03B1\u0271\u04BD"
 --- !u!222 &1132368293
 CanvasRenderer:
   m_ObjectHideFlags: 0

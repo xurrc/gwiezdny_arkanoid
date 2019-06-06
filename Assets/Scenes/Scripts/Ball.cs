@@ -31,10 +31,10 @@ public class Ball : MonoBehaviour
         if (!HasStarted)
         {   
         LockBallToPaddle();
-        LaunchOnMouseClick();
+        LaunchToPaddle();
          }
         }
-    private void LaunchOnMouseClick()
+    private void LaunchToPaddle()
     {
         if (Input.GetMouseButtonDown(0))
 
