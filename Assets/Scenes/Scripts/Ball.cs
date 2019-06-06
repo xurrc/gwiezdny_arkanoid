@@ -7,7 +7,7 @@ public class Ball : MonoBehaviour
 {
 
 
-
+    public Transform boom;
     [SerializeField] Paddle paddle1;
     [SerializeField] bool HasStarted = false;
     [SerializeField] float xPush;
@@ -50,5 +50,13 @@ public class Ball : MonoBehaviour
     {
         Vector2 paddlePos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
         transform.position = paddlePos + paddleToBallVectorl;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Blocks"))
+        {
+            Instantiate(boom, collision.transform.position, collision.transform.rotation);
+        }
     }
 }
